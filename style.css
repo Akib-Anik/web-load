@@ -1,0 +1,41 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background: hsl(15,5%,4%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center{
+    width: 15rem;
+    height: 15rem;
+    display: grid;
+    place-items: center;
+    /* background-color: red; */
+    position: relative;
+}
+.rot{
+    width: 15rem;
+    height: 15rem;
+    border-right: .3rem solid white;
+    border-radius: 50%;
+    animation: load 2s linear infinite;
+    position: absolute;
+}
+h1{
+    color: white;
+}
+@keyframes load{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
